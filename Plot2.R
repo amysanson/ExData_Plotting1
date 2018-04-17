@@ -14,3 +14,6 @@ for (i in 4:10) {
 
 plot(data$date_time, data$Global_active_power, type = "n", xlab = "", ylab = "Global Active Power (kilowatts)")
 lines(data$date_time, data$Global_active_power, type = "l")
+
+dev.copy(png,file="plot2.png",height=480,width=480)
+dev.off()

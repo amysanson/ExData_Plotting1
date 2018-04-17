@@ -28,3 +28,6 @@ legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_
 
 plot(data$date_time, data$Global_reactive_power, type = "n", xlab = "datetime", ylab = "Global_reactive_power")
 lines(data$date_time, data$Global_reactive_power, type = "l")
+
+dev.copy(png,file="plot4.png",height=480,width=480)
+dev.off()
